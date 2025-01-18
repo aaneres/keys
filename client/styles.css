@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: 'Comic Sans MS', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Chalkboard Styles */
+  .chalkboard {
+    background: #355E3B; /* Green chalkboard color */
+    width: 100vw; /* Full viewport width */
+    height: 93vh; /* Full viewport height */
+    border: 30px solid #A67C52; /* Wood-like border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Chalkboard Index Content */
+  .chalkboard-border {
+    text-align: center;
+    width: 30%;
+    color: white;
+  }
+  
+  /* Chalkboard Match Content */
+  .chalkboard-border {
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 1.5em;
+  }
+  
+  input {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+  }
+  
+  input::placeholder {
+    color: #f4f4f4;
+  }
+  
+/* Chalk at Bottom */
+   .chalk {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    width: 90%;
+    color: white;
+  } 
+  
+  .chalk.white {
+    background: white;
+    width: 70px;
+    height: 15px;
+    border-radius: 15px;
+  } 
+
+  
