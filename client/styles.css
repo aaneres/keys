@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 /* Button Styling */
 button {
@@ -23,47 +23,72 @@ button {
     font-family: inherit;
     font-weight: bold;
     transition: all 0.3s ease;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: #f4f4f4;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  }
-  
-  /* Chalkboard Styles */
-  .chalkboard {
-    background: #355E3B; /* Green chalkboard color */
-    width: 100vw; /* Full viewport width */
-    height: 93vh; /* Full viewport height */
-    border: 30px solid #A67C52; /* Wood-like border */
+}
+
+/* Chalkboard Styles */
+.chalkboard {
+    background: #355E3B;
+    width: 100vw;
+    height: 93vh;
+    border: 30px solid #A67C52;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Chalkboard Index Content */
-  .chalkboard-border {
+    text-align: center;
+    color: white;
+}
+
+/* Chalkboard Index Content */
+.chalkboard-border {
     text-align: center;
     width: 35%;
-    color: white;  
-  }
-  
-  /* Chalkboard Match Content */
-  .chalkboard-match-border {
+    color: white;
+}
+
+.matches {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* Spacing between matches */
+}
+
+.match {
+    text-align: center;
+}
+
+/* Name and Handle */
+.name {
+    font-size: 1.5em;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.handle {
+    font-size: 1.2em;
+    color: #f4f4f4;
+}
+
+/* Chalkboard Match Content */
+.chalkboard-match-border {
     text-align: center;
     width: 100%;
     color: white;
-  }
+}
 
-  h1 {
+h1 {
     font-size: 4em;
     margin-bottom: 20px;
     text-transform: lowercase;
-  }
+}
 
-  /* Circle for Image */
+/* Circle for Image */
 .circle {
     width: 150px;
     height: 150px;
@@ -83,19 +108,19 @@ button {
     height: 100%;
     object-fit: cover;
 }
-  
-  /* Form Styling */
-  form {
+
+/* Form Styling */
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  label {
+}
+
+label {
     font-size: 1.5em;
-  }
-  
-  input {
+}
+
+input {
     padding: 10px;
     border: 2px solid white;
     border-radius: 5px;
@@ -104,28 +129,25 @@ button {
     font-size: 1em;
     outline: none;
     text-align: center;
-  }
-  
-  input::placeholder {
+}
+
+input::placeholder {
     color: #f4f4f4;
-  }
-  
+}
+
 /* Chalk at Bottom */
-   .chalk {
+.chalk {
     position: absolute;
-    bottom: 0px;
+    bottom: 12px;
     display: flex;
     gap: 10px;
-    text-align: center;
     width: 90%;
-    color: white;
-  } 
-  
-  .chalk.white {
+}
+
+.chalk.white {
     background: white;
+    left: 20px;
     width: 70px;
     height: 15px;
     border-radius: 15px;
-  } 
-
-  
+}
