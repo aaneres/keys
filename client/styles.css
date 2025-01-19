@@ -136,18 +136,30 @@ input::placeholder {
 }
 
 /* Chalk at Bottom */
-.chalk {
+.chalk-container {
     position: absolute;
-    bottom: 12px;
-    display: flex;
-    gap: 10px;
-    width: 90%;
+    bottom: 16px;
+    width: 100%; 
+    height: 20px; 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 10px; 
 }
 
+/* General Chalk Styling */
 .chalk.white {
     background: white;
-    left: 20px;
     width: 70px;
     height: 15px;
     border-radius: 15px;
+    position: absolute;
+}
+
+/* Individual Chalk Positions */
+.chalk.white.one {
+    left: 80px; 
+}
+
+.chalk.white.two {
+    left: 160px; 
 }
